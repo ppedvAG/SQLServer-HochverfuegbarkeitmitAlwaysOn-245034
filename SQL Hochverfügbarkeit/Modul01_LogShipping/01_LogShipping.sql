@@ -1,5 +1,29 @@
 /*
 
+Voraussetzungen:
+
+DB: RecoveryModel: Buld oder höher
+LogBackup = LShipping
+nur noch JObs für Voll und Diffbackup
+
+SQL Server: ab Std .. Agent!
+
+Umgebung: Domäne wg Freigaben
+
+Ergebnis: lesbare sekundäre DB   1:N
+		allerdings mit time lag , er aber selbstbestimmbar ist
+
+evtl Probleme beim Einrichten
+--Zugriffe für Agent! 
+----> lokale Ordner besitzen imm nur rechte für das Konto MSSQLServer
+---->svcAgent und svcSQL haben nicht mal Logins
+
+
+
+
+
+
+
 Lokale Sicherung ist schneller als \\
 
 Wiederherstellungsmodel muss mind maasenprotkoliert sein
